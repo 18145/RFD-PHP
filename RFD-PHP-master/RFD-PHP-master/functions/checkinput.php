@@ -1,6 +1,6 @@
 <?php
 
 function checkInput($chaine) {
-  return htmlspecialchars (addslashes(urldecode(trim($_POST['nom']))));
+  return htmlspecialchars (addslashes(urldecode(trim($_POST($chaine)))));
 
 }
